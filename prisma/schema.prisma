@@ -7,7 +7,7 @@ generator client {
 
 datasource db {
   provider = "sqlite"
-  url                      = env("DATABASE_URL")
+  url      = env("DATABASE_URL")
 }
 
 model Event {
@@ -15,7 +15,7 @@ model Event {
   title String 
   details String? //opcional
   slug String @unique //nome a se mostrar na url
-  maxAttendees Int? @map("maximum_attendees")
+  maxAttendees Int? //opcional
 
-  @@map("events")
+  @@map("events") //altera o nome da tabela
 }

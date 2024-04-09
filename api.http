@@ -4,5 +4,5 @@ Content-Type: application/json
 {
     "title": "Bhaskara",
     "details": "Um evento para quem é apaixonado por programação",
-    "maximumAttendees": 100
+    "maxAttendees": 150
 }
